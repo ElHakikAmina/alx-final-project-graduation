@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Livre</title>
+    <link rel="stylesheet" href="styles/addbook.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Ajouter un Livre</h2>
+        <form id="addBookForm">
+            <label for="title">Titre:</label>
+            <input type="text" id="title" required>
+            <label for="author">Auteur:</label>
+            <input type="text" id="author" required>
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" required>
+            <button type="submit">Ajouter</button>
+            <p id="addBookMessage"></p>
+        </form>
+        <a href="index.html">Retour à l'accueil</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
