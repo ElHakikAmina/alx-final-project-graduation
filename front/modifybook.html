@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier un livre - Système de Gestion de Bibliothèque</title>
+    <link rel="stylesheet" href="modifybook.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Modifier un livre</h2>
+            <form id="modifyBookForm">
+                <div class="input-group">
+                    <label for="isbn">ISBN du livre</label>
+                    <input type="text" id="isbn" name="isbn" required>
+                </div>
+                <div class="input-group">
+                    <label for="newTitle">Nouveau titre</label>
+                    <input type="text" id="newTitle" name="newTitle">
+                </div>
+                <div class="input-group">
+                    <label for="newAuthor">Nouvel auteur</label>
+                    <input type="text" id="newAuthor" name="newAuthor">
+                </div>
+                <button type="submit" class="btn">Modifier</button>
+                <p class="success-message" id="successMessage"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="modifybook.js"></script>
+</body>
+</html>
