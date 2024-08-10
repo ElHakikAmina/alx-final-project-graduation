@@ -9,4 +9,11 @@ document.getElementById('modifyBookForm').addEventListener('submit', function(ev
     const successMessage = document.getElementById('successMessage');
 
     // Simuler la modification du livre (cette logique serait reliée à une base de données réelle)
-    if (isbn && (
+    if (isbn && (newTitle || newAuthor)) {
+        successMessage.textContent = 'Livre modifié avec succès!';
+        successMessage.style.visibility = 'visible';
+    } else {
+        successMessage.textContent = 'Erreur lors de la modification du livre.';
+        successMessage.style.visibility = 'visible';
+    }
+});
