@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer un livre - Système de Gestion de Bibliothèque</title>
+    <link rel="stylesheet" href="deletebook.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Supprimer un livre</h2>
+            <form id="deleteBookForm">
+                <div class="input-group">
+                    <label for="isbn">ISBN du livre</label>
+                    <input type="text" id="isbn" name="isbn" required>
+                </div>
+                <button type="submit" class="btn">Supprimer</button>
+                <p class="success-message" id="successMessage"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="deletebook.js"></script>
+</body>
+</html>
