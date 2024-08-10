@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier un Livre</title>
+    <link rel="stylesheet" href="styles/modifybook.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Modifier un Livre</h2>
+        <form id="modifyBookForm">
+            <label for="bookId">ID du Livre:</label>
+            <input type="number" id="bookId" required>
+            <label for="newTitle">Nouveau Titre:</label>
+            <input type="text" id="newTitle">
+            <label for="newAuthor">Nouvel Auteur:</label>
+            <input type="text" id="newAuthor">
+            <label for="newIsbn">Nouvel ISBN:</label>
+            <input type="text" id="newIsbn">
+            <button type="submit">Modifier</button>
+            <p id="modifyBookMessage"></p>
+        </form>
+        <a href="index.html">Retour à l'accueil</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
